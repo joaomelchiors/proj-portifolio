@@ -1,3 +1,3 @@
-function tmp() {
-	console.log("Ola Mundo");
-}
+const x = 123;
+
+export { x };
