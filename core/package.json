@@ -5,5 +5,8 @@
 	"type": "module",
 	"keywords": [],
 	"author": "joaomelchiors",
-	"license": "ISC"
+	"license": "ISC",
+	"dependencies": {
+		"uuid": "^11.1.0"
+	}
 }
