@@ -11,5 +11,5 @@ export default interface Projeto {
 	type: Type;
 	highlight: boolean;
 	repository: string;
-	tecnologia: Tecnologia[];
+	tecnologias: Tecnologia[];
 }
