@@ -1,15 +1,10 @@
 import type { Metadata } from "next";
-import { Montserrat, Geist } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
 const montserrat = Montserrat({
 	subsets: ["latin"],
 	variable: "--font-montserrat",
-});
-
-const geist = Geist({
-	subsets: ["latin"],
-	variable: "--font-geist",
 });
 
 export const metadata: Metadata = {
