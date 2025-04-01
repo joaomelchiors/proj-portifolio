@@ -5,7 +5,7 @@ export async function getTecnologias() {
 	const tecnologias: Tecnologia[] = await httpGet("/tecnologias");
 
 	return {
-		todas: tecnologias,
+		all: tecnologias,
 		get destaques() {
 			return tecnologias.filter((tecnologia) => tecnologia.highlight);
 		},

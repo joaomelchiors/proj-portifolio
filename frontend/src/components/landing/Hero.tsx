@@ -1,6 +1,6 @@
 import Header from "../shared/Header";
 
-const Home = () => {
+const Hero = () => {
 	return (
 		<div
 			className="flex flex-col items-center justify-center bg-[url('/principal.jpg')]
@@ -20,4 +20,4 @@ const Home = () => {
 	);
 };
 
-export default Home;
+export default Hero;

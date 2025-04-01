@@ -1,9 +1,17 @@
-import Home from "@/components/landing/Home";
+import Curriculo from "@/components/curriculo";
+import Hero from "@/components/landing/Hero";
+import Container from "@/components/shared/Container";
+import { getTecnologias } from "@/functions/tecnologias";
 
-export default function homePage() {
+export default async function homePage() {
+	const tecnologias = await getTecnologias();
+
 	return (
 		<>
-			<Home />
+			<Hero />
+			<Container className="py-16">
+				<Curriculo tecnologias={tecnologias.all} />
+			</Container>
 		</>
 	);
 }
