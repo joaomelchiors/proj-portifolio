@@ -5,10 +5,10 @@ import Menu from "./Menu";
 
 const Header = () => {
 	return (
-		<header className="w-full flex items-center h-16 bg-black/50">
+		<header id="header" className="w-full flex items-center h-16 bg-black/50">
 			{/*'flex-1 porque ao colocar o container dentro do header, 
             ele fica centralizado, pois o espaço dele fica limitado ao tamanho do seu conteúdo*/}
-			<Container className="flex-1 flex justify-between items-center">
+			<Container className="flex-1 flex justify-center sm:justify-between items-center">
 				<div className="flex items-center gap-10">
 					<Link href="/" className="hidden sm:block">
 						<Image src="/logo.svg" alt="logo" width={80} height={0} />
