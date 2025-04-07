@@ -24,4 +24,20 @@ export class ProjetoPrisma {
 			type: projeto.type as Type, // Conversão explícita
 		}));
 	}
+
+	async obterProjeto(id: number): Promise<Projeto | null> {
+		const projeto = await this.prisma.project.findUnique({
+			where: { id },
+			include: { tecnologias: true },
+		});
+
+		if (!projeto) {
+			return null;
+		}
+
+		return {
+			...projeto,
+			type: projeto.type as Type, // Conversão explícita
+		};
+	}
 }

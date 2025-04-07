@@ -1,4 +1,4 @@
-import { Controller, Get } from "@nestjs/common";
+import { Controller, Get, Param, ParseIntPipe } from "@nestjs/common";
 import { ProjetoPrisma } from "./projeto.prisma";
 import { Projeto } from "@core";
 
@@ -14,5 +14,10 @@ export class ProjetoController {
 	@Get("destaques")
 	async obterDestaques(): Promise<Projeto[]> {
 		return await this.projetoPrisma.obterDestaques();
+	}
+
+	@Get(":id")
+	async obterProjeto(@Param("id", ParseIntPipe) id: number): Promise<Projeto | null> {
+		return await this.projetoPrisma.obterProjeto(id);
 	}
 }

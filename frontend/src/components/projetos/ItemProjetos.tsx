@@ -7,7 +7,7 @@ export interface ItemProjetosProps {
 
 export default function ItemProjetos({ projeto }: ItemProjetosProps) {
 	return (
-		<Link href={`/projetos/${projeto.id}`}>
+		<Link href={`/projeto/${projeto.id}`}>
 			<div
 				className="
                 relative

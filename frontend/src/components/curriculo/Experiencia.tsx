@@ -4,9 +4,9 @@ const Experiencia = () => {
 			id="experiencia"
 			className="flex flex-col sm:flex-row lg:flex-col items-center justify-around p-6 gap-6 bg-black border border-zinc-800 rounded-2xl"
 		>
-			<Item principal="+150" label="países atendidos" />
-			<Item principal="+20" label="anos de experiência" />
-			<Item principal="420k" label="alunos matriculados" />
+			<Item principal="~600/year" label="contribuições" />
+			<Item principal="+3" label="anos de experiência" />
+			<Item principal="890h" label="em aprendizagem" />
 		</div>
 	);
 };
