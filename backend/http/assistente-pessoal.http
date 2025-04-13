@@ -3,5 +3,5 @@ Content-Type: application/json
 
 {
   "chatId": "123456789",
-  "message": "Quel o projeto mais desafiador do joao"
+  "message": "qual as tools que vc tem?"
 }

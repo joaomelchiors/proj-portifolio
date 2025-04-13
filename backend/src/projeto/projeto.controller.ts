@@ -20,4 +20,11 @@ export class ProjetoController {
 	async obterProjeto(@Param("id", ParseIntPipe) id: number): Promise<Projeto | null> {
 		return await this.projetoPrisma.obterProjeto(id);
 	}
+
+	/*
+		Outra Opção
+		async obterPorId(@Param("id") id: string): Promise<Projeto | null> {
+			return this.repo.obterPorID(Number(id))
+		}
+	*/
 }
