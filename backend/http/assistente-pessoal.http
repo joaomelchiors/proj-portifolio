@@ -1,7 +1,7 @@
-POST https://kyptronk.app.n8n.cloud/webhook/assitente-pessoal
+POST http://localhost:5678/webhook/64b590c1-b955-4d1a-9ea7-5d44addb273b
 Content-Type: application/json
 
 {
   "chatId": "123456789",
-  "message": "qual as tools que vc tem?"
+  "message": "quem é o joao melchiors"
 }
