@@ -6,6 +6,9 @@ import Tecnologias from "@/components/tecnologias/tecnologias";
 import getReadme from "@/functions/github";
 import { getProjeto } from "@/functions/projetos";
 
+// intervalo de tempo que faz a página ir no backend é atualizar
+export const revalidate = 3600
+
 const PaginaProjeto = async (props: { params: Promise<{ id: string }> }) => {
 	const { id } = await props.params;
 	const projeto = await getProjeto(id);

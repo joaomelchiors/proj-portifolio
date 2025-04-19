@@ -5,6 +5,9 @@ import Container from "@/components/shared/Container";
 import { getTecnologias } from "@/functions/tecnologias";
 import { getProjetos } from "@/functions/projetos";
 
+// intervalo de tempo que faz a página ir no backend é atualizar
+export const revalidate = 3600;
+
 export default async function homePage() {
 	const tecnologias = await getTecnologias();
 	const projetos = await getProjetos();
