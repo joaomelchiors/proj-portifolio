@@ -12,7 +12,7 @@ const fileFolderWithFileNameExecution = fileURLToPath(import.meta.url);
 // remove o nome do arquivo do endereço para termos o diretório
 const fileFolderExecution = path.dirname(fileFolderWithFileNameExecution);
 
-const dockerFolder = path.join(userFolder, "docker/n8n/");
+const dockerFolder = path.join(fileFolderExecution, "../infra/");
 
 function callScript() {
 	try {

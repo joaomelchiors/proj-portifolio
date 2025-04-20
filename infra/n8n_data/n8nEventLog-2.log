@@ -1,0 +1,2 @@
+{"__type":"$$EventMessageAudit","id":"faba9181-79ad-419b-a794-86c0fa873b94","ts":"2025-04-19T21:13:41.617-04:00","eventName":"n8n.audit.user.login.success","message":"n8n.audit.user.login.success","payload":{"userId":"265d7e68-70d3-4925-aa1f-3e12f8f6eb3f","_email":"joaomelchiors@gmail.com","_firstName":"João Marcos","_lastName":"MELCHIORS","globalRole":"global:owner","authenticationMethod":"email"}}
+{"__type":"$$EventMessageConfirm","confirm":"faba9181-79ad-419b-a794-86c0fa873b94","ts":"2025-04-19T21:13:41.617-04:00","source":{"id":"0","name":"eventBus"}}

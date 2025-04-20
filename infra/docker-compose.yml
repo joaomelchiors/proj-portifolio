@@ -1,0 +1,33 @@
+services:
+    n8n:
+        image: n8nio/n8n
+        ports:
+            - "5678:5678"
+        environment:
+            - N8N_RUNNERS_ENABLED=true
+            - N8N_BASIC_AUTH_ACTIVE=false
+            - N8N_EMAIL_MODE=smtp
+            - N8N_SMTP_HOST=maildev
+            - N8N_SMTP_PORT=1025
+            - N8N_SMTP_USER=joaomelchiors@mail.dev
+            - N8N_SMTP_PASS=12345
+            - N8N_SMTP_SENDER=n8n@example.com
+            - N8N_HOST=localhost
+            - N8N_PORT=5678
+            - WEBHOOK_TUNNEL_URL=http://localhost:5678
+            - N8N_PROTOCOL=http
+            - EXECUTIONS_MODE=regular
+            - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
+        volumes:
+            - ./n8n_data:/home/node/.n8n
+        depends_on:
+            - maildev
+
+    maildev:
+        image: maildev/maildev
+        ports:
+            - "1080:1080" # Interface web
+            - "1025:1025" # Porta SMTP
+
+volumes:
+    n8n_data:

@@ -28,8 +28,8 @@ export default function MiniCV() {
 				<p className="text-sm text-center md:text-left lg:text-center xl:text-left">
 					20 anos como servidor da Secretaria de Estado de Educação do Distrito Federal, tendo iniciado sua
 					carreira como Técnico de Computador, logo após atuou com rede estruturada, foi Coordenador de
-					Suporte em Informática na Regional de Taguatinga e hoje é Analista no desenvolvimento e
-					implementação no CartãoPDAF no Distrito Federal.
+					Suporte em Informática na Regional de Taguatinga e hoje é consultor técnico no desenvolvimento e
+					implementação do CartãoPDAF no Distrito Federal.
 				</p>
 			</div>
 		</div>
